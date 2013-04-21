@@ -1,20 +1,19 @@
 $(function(){
-    var openPicker   = function(e){
-        var mainWindow  = $('#pick-window');
+	var openPicker   = function(e){
+		var mainWindow  = $('#pick-window');
 
-        if (mainWindow.css('display') == 'none'){
-            mainWindow.show();
-        }else if (mainWindow.css('display') == 'block'){
-            mainWindow.hide();
-        };
+		if (mainWindow.css('display') == 'none'){
+			mainWindow.show();
+		}else if (mainWindow.css('display') == 'block'){
+			mainWindow.hide();
+		};
 
-        setTimeout(function(){
-            $('#pick-loader').hide();
-        }, 5000)
-    };
+		setTimeout(function(){
+			$('#pick-loader').hide();
+		}, 5000)
+	};
 
+	var pickButton  = $('#pick-button');
 
-    var pickButton  = $('#pick-button');
-
-    pickButton.click(openPicker);
+	pickButton.click(openPicker);
 })
