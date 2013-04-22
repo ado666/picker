@@ -1,4 +1,16 @@
 $(function(){
+
+    $( document ).tooltip({
+      items: "img",
+      content: function() {
+        var element = $( this );
+        if ( element.is( "img" ) ) {
+          var text = element.text();
+          return '<img src="'+element.attr('tooltip_src')+'">';
+        }
+      }
+    });
+
 	var openPicker   = function(e){
 		var mainWindow	= $('#ip-window');
 		var content		= $('#ip-content');
@@ -20,12 +32,14 @@ $(function(){
 			content.html(html);
 
 			$('.ip-photo').mouseenter(function(){
+                return;
 				var elem	= $(this);
 //				console.log(elem)
 				tooltip.html('<img src="'+elem.attr('tooltip_src')+'">');
 				tooltip.show();
 			})
 			$('.ip-photo').mouseout(function(){
+                return;
 //				var elem	= $(this);
 ////				console.log(elem)
 //				tooltip.html('<img src="'+elem.attr('tooltip_src')+'">');

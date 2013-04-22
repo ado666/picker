@@ -15,3 +15,7 @@
     position: absolute;
     z-index: 100;
 }
+
+.ui-tooltip {
+    max-width: 750px;
+}
