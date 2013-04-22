@@ -1,3 +1,4 @@
+
 $(function(){
     var openPicker   = function(e){
         var mainWindow  = $('#pick-window');
