@@ -35,9 +35,10 @@ function getAlbums () {
 		}]
 	};
 	return response;
-}
+};
 
 function getPhotosByAlbum (albumId) {
+
 	var response	= {
 		response: [{
 			pid: 295807727,
@@ -120,5 +121,7 @@ function getPhotosByAlbum (albumId) {
 			lat: 46.430003,
 			long: 11.849997
 		}]
-	}
-}
+	};
+
+	return response;
+};

@@ -1,7 +1,17 @@
-.picker-window {
+#ip-window {
     position: absolute;
     width: 700px;
     height: 500px;
     background-color: gray;
     display: none;
+}
+
+#ip-loader {
+    display: none;
+}
+
+#ip-tooltip {
+    display: none;
+    position: absolute;
+    z-index: 100;
 }
